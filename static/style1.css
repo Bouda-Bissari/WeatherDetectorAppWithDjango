@@ -1,0 +1,52 @@
+
+
+body{
+
+}
+
+
+
+
+
+
+
+div#nav{
+    background-color: bisque;
+    height: 60px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+div#search{
+    background-color: bisque;
+    height: 60px;
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    width: 80%px;
+    margin-bottom: 30px;
+}
+input#chercher{
+    width:400px;
+    
+}
+div#contenu{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    
+    
+}

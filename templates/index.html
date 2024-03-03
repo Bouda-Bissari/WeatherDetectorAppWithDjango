@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+    <div id="nav">
+        <p>Weather Detector</p>
+        <img src="{% static 'wi-day-snow-thunderstorm.svg' %}" alt="thunder" style="height: 60px; width: 90px;">
+    </div>
+    <div id="search">
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="search" name="city" id="chercher" placeholder="search">
+            <button type="submit" style="background-color: rgb(255, 255, 255); border: solid white 1px; border-radius: 5px;">
+                <img src=" {% static 'search-search-svgrepo-com.svg' %}" alt="cher" height="15px">
+            </button>
+        </form>
+    </div>
+
+    <div id="contenu">
+        <h2>{{ city }}</h2>
+        
+        <h1>Country Code : {{ Country_code }}</h1>
+        <p>coordonnees : {{ coordonnees }}</p>
+        <p>Temperature : {{ temp }} <img src="{% static 'wi-thermometer.svg' %}" style="height: 30px"></p>
+        <p>Pression :{{ pression }} </p>
+        <p>Humidite : {{ humidity }} <img src="{% static 'wi-humidity.svg' %}" style="height: 30px"></p>
+    </div>
+
+</body>
+</html>
